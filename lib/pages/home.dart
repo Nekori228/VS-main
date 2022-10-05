@@ -25,12 +25,12 @@ class _HomeState extends State<Home> {
                     Navigator.pushNamed(context, '/phone');
                   },
                   child: Container(
-                    // decoration: BoxDecoration(
-                    //   borderRadius: BorderRadius.circular(10),
-                    //   color: Colors.white,
-                    // ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.white),
+                      color: Colors.blue
+                    ),
                     margin: EdgeInsets.all(15),
-                    color: Colors.blue,
                     width: 340,
                     height: 80,
                     child: Row(
@@ -46,10 +46,13 @@ class _HomeState extends State<Home> {
                             style:
                                 TextStyle(color: Colors.white, fontSize: 12)),
                         Padding(padding: EdgeInsets.all(10)),
-                        SizedBox(
-                            width: 30,
-                            height: 30,
-                            child: SvgPicture.asset('assets/images/more.svg'))
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                          child: SizedBox(
+                              width: 30,
+                              height: 30,
+                              child: SvgPicture.asset('assets/images/more.svg')),
+                        )
                       ],
                     ),
                   ),
@@ -60,8 +63,12 @@ class _HomeState extends State<Home> {
                   Navigator.pushNamed(context, '/catalog');
                 },
                 child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.white),
+                      color: Colors.blue
+                  ),
                   margin: EdgeInsets.all(15),
-                  color: Colors.blue,
                   width: 340,
                   height: 80,
                   child: Row(
@@ -76,10 +83,13 @@ class _HomeState extends State<Home> {
                       Text('Тематически провести день? \nМаршруты прогулок',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(padding: EdgeInsets.all(10)),
-                      SizedBox(
-                          width: 30,
-                          height: 30,
-                          child: SvgPicture.asset('assets/images/more.svg'))
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        child: SizedBox(
+                            width: 30,
+                            height: 30,
+                            child: SvgPicture.asset('assets/images/more.svg')),
+                      )
                     ],
                   ),
                 ),
@@ -89,8 +99,12 @@ class _HomeState extends State<Home> {
                   Navigator.pushNamed(context, '/language');
                 },
                 child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.white),
+                      color: Colors.blue
+                  ),
                   margin: EdgeInsets.all(15),
-                  color: Colors.blue,
                   width: 340,
                   height: 80,
                   child: Row(
@@ -105,10 +119,13 @@ class _HomeState extends State<Home> {
                       Text('Легко общаться с жителями? \nВыучите язык',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(padding: EdgeInsets.all(10)),
-                      SizedBox(
-                          width: 30,
-                          height: 30,
-                          child: SvgPicture.asset('assets/images/more.svg'))
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        child: SizedBox(
+                            width: 30,
+                            height: 30,
+                            child: SvgPicture.asset('assets/images/more.svg')),
+                      )
                     ],
                   ),
                 ),
@@ -117,9 +134,12 @@ class _HomeState extends State<Home> {
                 onTap: () {
                   Navigator.pushNamed(context, '/travel');
                 },
-                child: Container(
+                child: Container(decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.white),
+                    color: Colors.blue
+                ),
                   margin: EdgeInsets.all(15),
-                  color: Colors.blue,
                   width: 340,
                   height: 80,
                   child: Row(
@@ -135,10 +155,13 @@ class _HomeState extends State<Home> {
                       Text(
                           'Хотите больше увидеть в России? \nПоездка по городам',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
-                      SizedBox(
-                          width: 30,
-                          height: 30,
-                          child: SvgPicture.asset('assets/images/more.svg')),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(35, 0, 0, 0),
+                        child: SizedBox(
+                            width: 30,
+                            height: 30,
+                            child: SvgPicture.asset('assets/images/more.svg')),
+                      ),
                     ],
                   ),
                 ),
@@ -148,8 +171,12 @@ class _HomeState extends State<Home> {
                   Navigator.pushNamed(context, '/museum');
                 },
                 child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.white),
+                      color: Colors.blue
+                  ),
                   margin: EdgeInsets.all(15),
-                  color: Colors.blue,
                   width: 340,
                   height: 80,
                   child: Row(
@@ -164,10 +191,13 @@ class _HomeState extends State<Home> {
                       Text('Нравится духовно развиваться? \nМузеи города',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(padding: EdgeInsets.all(10)),
-                      SizedBox(
-                          width: 30,
-                          height: 30,
-                          child: SvgPicture.asset('assets/images/more.svg'))
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(25, 0, 0, 0),
+                        child: SizedBox(
+                            width: 30,
+                            height: 30,
+                            child: SvgPicture.asset('assets/images/more.svg')),
+                      )
                     ],
                   ),
                 ),

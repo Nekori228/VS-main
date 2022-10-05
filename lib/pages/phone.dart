@@ -5,6 +5,18 @@ class Phone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text('1'),);
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.blue),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: Text(
+          'Телефоны служб',
+          style: TextStyle(color: Colors.black, fontSize: 14),
+        ),
+      ),
+    );
   }
 }
