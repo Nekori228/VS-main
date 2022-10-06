@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.all(5),
+                          padding: EdgeInsets.all(15),
                           child: SizedBox(
                               width: 40,
                               height: 40,
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                                 TextStyle(color: Colors.white, fontSize: 12)),
                         Padding(padding: EdgeInsets.all(10)),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                          padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                           child: SizedBox(
                               width: 30,
                               height: 30,
@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(padding: EdgeInsets.all(10)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: EdgeInsets.fromLTRB(25, 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,
@@ -110,7 +110,7 @@ class _HomeState extends State<Home> {
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(padding: EdgeInsets.all(10)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: EdgeInsets.fromLTRB(25 , 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,
@@ -145,7 +145,7 @@ class _HomeState extends State<Home> {
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
@@ -156,7 +156,7 @@ class _HomeState extends State<Home> {
                           'Хотите больше увидеть в России? \nПоездка по городам',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(35, 0, 0, 0),
+                        padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,
@@ -182,7 +182,7 @@ class _HomeState extends State<Home> {
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
@@ -192,7 +192,7 @@ class _HomeState extends State<Home> {
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(padding: EdgeInsets.all(10)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(25, 0, 0, 0),
+                        padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,
