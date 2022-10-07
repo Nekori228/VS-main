@@ -15,7 +15,7 @@ class Phone extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.white,
           title: Text(
-            'Телефоны служб',
+            'ТЕЛЕФОНЫ СЛУБЖ',
             style: TextStyle(color: Colors.black, fontSize: 14),
           ),
         ),
@@ -35,7 +35,9 @@ class Phone extends StatelessWidget {
                 ),
               ),
             ),
-            Container(child: Scroll()),
+            Container(
+                child: Scroll()
+            ),
             Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
@@ -115,10 +117,9 @@ class Scroll extends StatelessWidget {
         SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              // Text('Медицина', style: TextStyle(color: Colors.black, fontSize: 30),),
               GestureDetector(
                 onTap: () {
-                  // Navigator.pushNamed(context, '/museum');
+                  Navigator.pushNamed(context, '/services');
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -153,7 +154,7 @@ class Scroll extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  // Navigator.pushNamed(context, '/museum');
+                  Navigator.pushNamed(context, '/services');
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -207,10 +208,9 @@ class _NumberState extends State<Number> {
         SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              // Text('Медицина', style: TextStyle(color: Colors.black, fontSize: 30),),
               GestureDetector(
                 onTap: () {
-                  // Navigator.pushNamed(context, '/museum');
+                  // Navigator.pushNamed(context, '/services');
                 },
                 child: Container(
                   child: DottedBorder(
@@ -239,7 +239,6 @@ class _NumberState extends State<Number> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Navigator.pushNamed(context, '/museum');
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -273,7 +272,6 @@ class _NumberState extends State<Number> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Navigator.pushNamed(context, '/museum');
                 },
                 child: Container(
                   decoration: BoxDecoration(
