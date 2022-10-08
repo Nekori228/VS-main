@@ -210,7 +210,7 @@ class _NumberState extends State<Number> {
             child: Row(children: <Widget>[
               GestureDetector(
                 onTap: () {
-                  // Navigator.pushNamed(context, '/services');
+                  Navigator.pushNamed(context, '/edit');
                 },
                 child: Container(
                   child: DottedBorder(
