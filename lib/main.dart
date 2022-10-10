@@ -7,6 +7,7 @@ import 'package:untitled/pages/travel.dart';
 import 'package:untitled/pages/museum.dart';
 import 'package:untitled/pages/phoneServices.dart';
 import 'package:untitled/pages/edit.dart';
+import 'package:untitled/pages/phrase.dart';
 
 void main() => runApp(MaterialApp(
 initialRoute: '/',
@@ -19,5 +20,6 @@ initialRoute: '/',
         '/museum': (context) => Museum(),
         '/services': (context) => Services(),
         '/edit': (context) => Edit(),
+        '/phrase': (context) => Phrase(),
   },
     ));
