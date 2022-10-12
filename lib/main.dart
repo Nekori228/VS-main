@@ -10,6 +10,12 @@ import 'package:untitled/pages/edit.dart';
 import 'package:untitled/pages/phrase.dart';
 import 'package:untitled/pages/phraseCard.dart';
 import 'package:untitled/pages/travelProcess.dart';
+import 'package:untitled/pages/audioPlayer.dart';
+import 'package:untitled/pages/boroccoMuseum.dart';
+import 'package:untitled/pages/boroccoMuseumBig.dart';
+import 'package:untitled/pages/map.dart';
+import 'package:untitled/pages/bouttonOne.dart';
+
 
 void main() => runApp(MaterialApp(
 initialRoute: '/',
@@ -25,5 +31,10 @@ initialRoute: '/',
         '/phrase': (context) => Phrase(),
         '/phrasecard': (context) => PhraseCard(),
         '/travelprocess': (context) => TravelProcces(),
-  },
+        '/audioplayer': (context) => AudioPlayer(),
+        '/boroccomuseum': (context) => BoroccoMuseum(),
+        '/boroccomuseumbig': (context) => BoroccoMuseumBig(),
+        '/map': (context) => Map(),
+        '/boutton': (context) => Boutton(),
+   },
     ));

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Museum extends StatefulWidget {
-  const Museum({Key? key}) : super(key: key);
+class Boutton extends StatefulWidget {
+  const Boutton({Key? key}) : super(key: key);
 
   @override
-  State<Museum> createState() => _MuseumState();
+  State<Boutton> createState() => _BouttonState();
 }
 
-class _MuseumState extends State<Museum> {
+class _BouttonState extends State<Boutton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,15 +18,10 @@ class _MuseumState extends State<Museum> {
         iconTheme: IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Text(
-                'КАРТОЧКА МУЗЕЯ',
-                style: TextStyle(color: Colors.black, fontSize: 14),
-              ),
-              SvgPicture.asset('assets/images/love.svg'),
-            ]),
+        title: Text(
+          'ТОЧКА №1 ЭРМИТАЖ',
+          style: TextStyle(color: Colors.black, fontSize: 14),
+        ),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -34,118 +29,93 @@ class _MuseumState extends State<Museum> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.fromLTRB(15, 20, 0, 30),
+              padding: EdgeInsets.fromLTRB(15, 40, 0, 40),
               child: Text(
                 'Эрмитаж',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
               ),
             ),
-            Center(
-              child: Container(
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage('assets/photo/museum.png'),
-                        fit: BoxFit.fill)),
-                height: 340,
-                width: 335,
+            Padding(
+              padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
+              child: Text(
+                'Часть №1',
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+              child: Text('История основная',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
+            ),
+            GestureDetector(
+              onTap: () => Navigator.pushNamed(context, '/audioplayer'),
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    SvgPicture.asset('assets/images/buttonPlay.svg'),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
+              child: Text(
+                'Часть №1',
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+              child: Text('История основная',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
+            ),
+            GestureDetector(
+              onTap: () => Navigator.pushNamed(context, '/audioplayer'),
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    SvgPicture.asset('assets/images/buttonPlay.svg'),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+              child: Text(
+                'Позы для фото',
+                style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
               ),
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [Photo(), Photo(), Photo()],
+                children: [Photo2(), Photo2(), Photo2()],
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 10, 0, 30),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  SvgPicture.asset('assets/images/time.svg'),
-                  Text(
-                    '4-5 часов',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                  SvgPicture.asset('assets/images/tickets.svg'),
-                  Text(
-                    '800 руб.',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ],
+              padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+              child: Text(
+                'Описание',
+                style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
               child: SizedBox(
                 width: 340,
                 height: 150,
-                child: Text(
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et sed tempor, at magna purus quam sit id. '
-                  'Ut id aliquam molestie tortor, amet, suspendisse mi. Dictum viverra accumsan a proin amet. '
-                  'Amet, velit consequat enim urna, pellentesque in cursus auctor. Erat a, sapien, nisl id et. '
-                  'Egestas rhoncus, commodo convallis mauris.',
-                  style: TextStyle(fontSize: 16),
-                ),
+                child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et sed tempor, at magna purus quam sit id. '
+                    'Ut id aliquam molestie tortor, amet, suspendisse mi. Dictum viverra accumsan a proin amet. '
+                    'Amet, velit consequat enim urna, pellentesque in cursus auctor. Erat a, sapien, nisl id et. '
+                    'Egestas rhoncus, commodo convallis mauris.', style: TextStyle(fontSize: 16,),),
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15, 40, 0, 40),
-              child: Text(
-                'Слушай на пути к музею',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
-              child: Text(
-                'Часть №1',
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
-              child: Text('История основная',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
-            ),
-            GestureDetector(
-              onTap: () => Navigator.pushNamed(context, '/audioplayer'),
-              child: Padding(
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    SvgPicture.asset('assets/images/buttonPlay.svg'),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
-              child: Text(
-                'Часть №1',
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
-              child: Text('История основная',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
-            ),
-            GestureDetector(
-              onTap: () => Navigator.pushNamed(context, '/audioplayer'),
-              child: Padding(
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    SvgPicture.asset('assets/images/buttonPlay.svg'),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(15),
               child: Center(
                 child: Container(
                   decoration: BoxDecoration(
@@ -158,7 +128,32 @@ class _MuseumState extends State<Museum> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'В ПУТЬ, К МУЗЕЮ',
+                        'ПОСМОТРЕТЬ КАРТУ',
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Center(
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: Colors.white),
+                      color: Colors.blue),
+                  width: 335,
+                  height: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'СЛЕДУЮЩИЙ ОБЪЕКТ',
                         style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
@@ -176,17 +171,17 @@ class _MuseumState extends State<Museum> {
   }
 }
 
-class Photo extends StatelessWidget {
-  const Photo({Key? key}) : super(key: key);
+class Photo2 extends StatelessWidget {
+  const Photo2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(15, 40, 5, 30),
+      padding: EdgeInsets.fromLTRB(15, 40, 3, 30),
       child: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/photo/museum.png'),
+                image: AssetImage('assets/photo/photoMaking.png'),
                 fit: BoxFit.fill)),
         height: 120,
         width: 120,
