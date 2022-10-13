@@ -132,9 +132,7 @@ class _PhrasesState extends State<Phrases> {
             ),
           ),
           GestureDetector(
-            onTap: () {
-              Navigator.pushNamed(context, '/phrasecard');
-            },
+            onTap: () => Navigator.pushNamed(context, '/phrasecard'),
             child: Padding(
               padding: const EdgeInsets.fromLTRB(70, 0, 0, 0),
                 child: SvgPicture.asset('assets/images/moreBlue.svg')),

@@ -114,27 +114,30 @@ class _BouttonState extends State<Boutton> {
                     'Egestas rhoncus, commodo convallis mauris.', style: TextStyle(fontSize: 16,),),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(15),
-              child: Center(
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.white),
-                      color: Colors.blue),
-                  width: 335,
-                  height: 50,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Text(
-                        'ПОСМОТРЕТЬ КАРТУ',
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.white),
-                      ),
-                    ],
+            GestureDetector(
+              onTap: () => Navigator.pushNamed(context, '/map'),
+              child: Padding(
+                padding: const EdgeInsets.all(15),
+                child: Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.white),
+                        color: Colors.blue),
+                    width: 335,
+                    height: 50,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text(
+                          'ПОСМОТРЕТЬ КАРТУ',
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

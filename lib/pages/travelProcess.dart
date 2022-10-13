@@ -21,12 +21,8 @@ class TravelProcces extends StatelessWidget {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(children: [
-          Container(
-            child: const Info(),
-          ),
-          Container(
-            child: const Info2(),
-          ),
+          const Info(),
+          const Info2(),
           Padding(
             padding: const EdgeInsets.fromLTRB(15, 0, 20, 0),
             child: Row(children: [

@@ -21,9 +21,7 @@ class _HomeState extends State<Home> {
               Align(
                 alignment: Alignment.topCenter,
                 child: GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/phone');
-                  },
+                  onTap: () => Navigator.pushNamed(context, '/phone'),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -59,9 +57,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/catalog');
-                },
+                onTap: () => Navigator.pushNamed(context, '/catalog'),
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -95,9 +91,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/language');
-                },
+                onTap: () => Navigator.pushNamed(context, '/language'),
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -131,9 +125,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/travel');
-                },
+                onTap: () => Navigator.pushNamed(context, '/travel'),
                 child: Container(decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.white),
@@ -167,9 +159,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/museum');
-                },
+                onTap: () => Navigator.pushNamed(context, '/museum'),
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),

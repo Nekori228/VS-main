@@ -39,9 +39,7 @@ class LanguageBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.pushNamed(context, '/phrase');
-      },
+      onTap: () => Navigator.pushNamed(context, '/phrase'),
       child: Container(
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),

@@ -100,9 +100,7 @@ class Edit extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: () {
-                  print('Test2');
-                },
+                onTap: () => print('Test2'),
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),

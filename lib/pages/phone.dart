@@ -21,8 +21,8 @@ class Phone extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
-          child: Column(children: [
-            const Padding(
+          child: Column(children: const [
+            Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -35,10 +35,8 @@ class Phone extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-                child: const Scroll()
-            ),
-            const Padding(
+            Scroll(),
+            Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -51,10 +49,8 @@ class Phone extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              child: const Scroll(),
-            ),
-            const Padding(
+            Scroll(),
+            Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -67,10 +63,8 @@ class Phone extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              child: const Scroll(),
-            ),
-            const Padding(
+            Scroll(),
+            Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -83,10 +77,8 @@ class Phone extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              child: const Scroll(),
-            ),
-            const Padding(
+            Scroll(),
+            Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -99,9 +91,7 @@ class Phone extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              child: const Number(),
-            ),
+            Number(),
           ]),
         ));
   }
@@ -118,9 +108,7 @@ class Scroll extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
               GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/services');
-                },
+                onTap: () => Navigator.pushNamed(context, '/services'),
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -153,9 +141,7 @@ class Scroll extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, '/services');
-                },
+                onTap: () => Navigator.pushNamed(context, '/services'),
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
