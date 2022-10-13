@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.fromLTRB(0, 15, 0, 0),
+        padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
         child: SafeArea(
           child: Column(
             children: [
@@ -30,24 +30,24 @@ class _HomeState extends State<Home> {
                       border: Border.all(color: Colors.white),
                       color: Colors.blue
                     ),
-                    margin: EdgeInsets.all(15),
+                    margin: const EdgeInsets.all(15),
                     width: 340,
                     height: 80,
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.all(15),
+                          padding: const EdgeInsets.all(15),
                           child: SizedBox(
                               width: 40,
                               height: 40,
                               child: SvgPicture.asset('assets/images/man.svg')),
                         ),
-                        Text('Попали в трудную ситуацию? \nТелефоны служб',
+                        const Text('Попали в трудную ситуацию? \nТелефоны служб',
                             style:
                                 TextStyle(color: Colors.white, fontSize: 12)),
-                        Padding(padding: EdgeInsets.all(10)),
+                        const Padding(padding: EdgeInsets.all(10)),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                           child: SizedBox(
                               width: 30,
                               height: 30,
@@ -68,23 +68,23 @@ class _HomeState extends State<Home> {
                       border: Border.all(color: Colors.white),
                       color: Colors.blue
                   ),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 340,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child: SvgPicture.asset('assets/images/map.svg')),
                       ),
-                      Text('Тематически провести день? \nМаршруты прогулок',
+                      const Text('Тематически провести день? \nМаршруты прогулок',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
-                      Padding(padding: EdgeInsets.all(10)),
+                      const Padding(padding: EdgeInsets.all(10)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(25, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(25, 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,
@@ -104,23 +104,23 @@ class _HomeState extends State<Home> {
                       border: Border.all(color: Colors.white),
                       color: Colors.blue
                   ),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 340,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child: SvgPicture.asset('assets/images/woman.svg')),
                       ),
-                      Text('Легко общаться с жителями? \nВыучите язык',
+                      const Text('Легко общаться с жителями? \nВыучите язык',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
-                      Padding(padding: EdgeInsets.all(10)),
+                      const Padding(padding: EdgeInsets.all(10)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(25 , 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(25 , 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,
@@ -139,24 +139,24 @@ class _HomeState extends State<Home> {
                     border: Border.all(color: Colors.white),
                     color: Colors.blue
                 ),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 340,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child:
                                 SvgPicture.asset('assets/images/travel.svg')),
                       ),
-                      Text(
+                      const Text(
                           'Хотите больше увидеть в России? \nПоездка по городам',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,
@@ -176,23 +176,23 @@ class _HomeState extends State<Home> {
                       border: Border.all(color: Colors.white),
                       color: Colors.blue
                   ),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 340,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child: SvgPicture.asset('assets/images/photo.svg')),
                       ),
-                      Text('Нравится духовно развиваться? \nМузеи города',
+                      const Text('Нравится духовно развиваться? \nМузеи города',
                           style: TextStyle(color: Colors.white, fontSize: 12)),
-                      Padding(padding: EdgeInsets.all(10)),
+                      const Padding(padding: EdgeInsets.all(10)),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                         child: SizedBox(
                             width: 30,
                             height: 30,

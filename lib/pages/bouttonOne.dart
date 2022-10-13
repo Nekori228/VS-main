@@ -15,10 +15,10 @@ class _BouttonState extends State<Boutton> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'ТОЧКА №1 ЭРМИТАЖ',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),
@@ -28,21 +28,21 @@ class _BouttonState extends State<Boutton> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 40, 0, 40),
               child: Text(
                 'Эрмитаж',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
               child: Text(
                 'Часть №1',
                 style: TextStyle(fontSize: 16),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
               child: Text('История основная',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
@@ -50,7 +50,7 @@ class _BouttonState extends State<Boutton> {
             GestureDetector(
               onTap: () => Navigator.pushNamed(context, '/audioplayer'),
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -59,14 +59,14 @@ class _BouttonState extends State<Boutton> {
                 ),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
               child: Text(
                 'Часть №1',
                 style: TextStyle(fontSize: 16),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
               child: Text('История основная',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
@@ -74,7 +74,7 @@ class _BouttonState extends State<Boutton> {
             GestureDetector(
               onTap: () => Navigator.pushNamed(context, '/audioplayer'),
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -83,7 +83,7 @@ class _BouttonState extends State<Boutton> {
                 ),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
               child: Text(
                 'Позы для фото',
@@ -93,18 +93,18 @@ class _BouttonState extends State<Boutton> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [Photo2(), Photo2(), Photo2()],
+                children: const [Photo2(), Photo2(), Photo2()],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
               child: Text(
                 'Описание',
                 style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
               child: SizedBox(
                 width: 340,
                 height: 150,
@@ -126,7 +126,7 @@ class _BouttonState extends State<Boutton> {
                   height: 50,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Text(
                         'ПОСМОТРЕТЬ КАРТУ',
                         style: TextStyle(
@@ -151,7 +151,7 @@ class _BouttonState extends State<Boutton> {
                   height: 50,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Text(
                         'СЛЕДУЮЩИЙ ОБЪЕКТ',
                         style: TextStyle(
@@ -177,9 +177,9 @@ class Photo2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(15, 40, 3, 30),
+      padding: const EdgeInsets.fromLTRB(15, 40, 3, 30),
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/photo/photoMaking.png'),
                 fit: BoxFit.fill)),

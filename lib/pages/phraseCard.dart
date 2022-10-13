@@ -15,10 +15,10 @@ class _PhraseCardState extends State<PhraseCard> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'КАРТОЧКА ФРАЗЫ',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),
@@ -28,34 +28,34 @@ class _PhraseCardState extends State<PhraseCard> {
         child: Column(children: [
           Row(
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
                 child: Text('I want to call a taxi',
                     style:
                         TextStyle(fontSize: 24, fontWeight: FontWeight.w500)),
               ),
               Padding(
-                  padding: EdgeInsets.fromLTRB(100, 0, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
                   child: SvgPicture.asset('assets/images/buttonPlay.svg')),
             ],
           ),
           Center(child: SvgPicture.asset('assets/images/arrows.svg')),
           Row(
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
                 child: Text('Я хочу вызвать такси',
                     style:
                         TextStyle(fontSize: 24, fontWeight: FontWeight.w500)),
               ),
               Padding(
-                  padding: EdgeInsets.fromLTRB(58, 0, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(58, 0, 0, 0),
                   child: SvgPicture.asset('assets/images/buttonPlay.svg')),
             ],
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(15, 20, 0, 5),
-            child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+            padding: const EdgeInsets.fromLTRB(15, 20, 0, 5),
+            child: Row(mainAxisAlignment: MainAxisAlignment.start, children: const [
               Text(
                 'Произношение',
                 style: TextStyle(fontSize: 16),
@@ -63,10 +63,10 @@ class _PhraseCardState extends State<PhraseCard> {
             ]),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(15, 5, 0, 10),
+            padding: const EdgeInsets.fromLTRB(15, 5, 0, 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
+              children: const [
                 Text(
                   'Йа хочую вызвать такси',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
@@ -75,10 +75,10 @@ class _PhraseCardState extends State<PhraseCard> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
+            padding: const EdgeInsets.fromLTRB(15, 20, 0, 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
+              children: const [
                 Text(
                   'Описание',
                   style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
@@ -87,10 +87,10 @@ class _PhraseCardState extends State<PhraseCard> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
+            padding: const EdgeInsets.fromLTRB(15, 20, 0, 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
+              children: const [
                 SizedBox(
                   width: 330,
                   height: 170,

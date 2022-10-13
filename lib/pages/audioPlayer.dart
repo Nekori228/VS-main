@@ -14,10 +14,10 @@ class _AudioPlayerState extends State<AudioPlayer> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'ЧАСТЬ №1 (ИСТОРИЯ ОСНОВНАЯ)',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),

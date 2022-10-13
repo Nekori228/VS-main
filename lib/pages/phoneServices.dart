@@ -10,13 +10,13 @@ class Services extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
         title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Text(
+              const Text(
                 'КАРТОЧКА ТЕЛЕФОНА',
                 style: TextStyle(color: Colors.black, fontSize: 14),
               ),
@@ -27,13 +27,13 @@ class Services extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Row(children: [Container(child: Help())]),
+            Row(children: const [Help()]),
             Padding(
-              padding: EdgeInsets.fromLTRB(15, 40, 15, 30),
+              padding: const EdgeInsets.fromLTRB(15, 40, 15, 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     '112',
                     style: TextStyle(fontSize: 41, fontWeight: FontWeight.bold),
                   ),
@@ -46,7 +46,7 @@ class Services extends StatelessWidget {
                     width: 160,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           'ПОЗВОНИТЬ',
                           style: TextStyle(
@@ -60,7 +60,7 @@ class Services extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 15, 30),
               child: Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
@@ -73,9 +73,9 @@ class Services extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(15, 0, 0, 0),
               child: Row(
-                children: [
+                children: const [
                   Text(
                     "Причины вызова",
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
@@ -84,7 +84,7 @@ class Services extends StatelessWidget {
               ),
             ),
             Column(
-              children: [Ellipse(), Ellipse(), Ellipse()],
+              children: const [Ellipse(), Ellipse(), Ellipse()],
             )
           ],
         ),
@@ -104,12 +104,12 @@ class _EllipseState extends State<Ellipse> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(15, 20, 0, 0),
+      padding: const EdgeInsets.fromLTRB(15, 20, 0, 0),
       child: Row(children: [
         Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+            padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
             child: SvgPicture.asset('assets/images/ellipse.svg')),
-        Text(
+        const Text(
           "Причина 1",
           style: TextStyle(fontSize: 16),
         ),
@@ -128,7 +128,7 @@ class Help extends StatefulWidget {
 class _HelpState extends State<Help> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
         padding: EdgeInsets.fromLTRB(15, 25, 0, 0),
         child: Text(
           'Скорая помощь',

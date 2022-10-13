@@ -10,10 +10,10 @@ class Map extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'ВЫБЕРИТЕ МАРШРУТ',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),

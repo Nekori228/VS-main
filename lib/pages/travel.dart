@@ -16,10 +16,10 @@ class _TravelState extends State<Travel> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'ВЫБЕРИТЕ ГОРОД',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),
@@ -29,8 +29,8 @@ class _TravelState extends State<Travel> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Search(),
-            Padding(
+            const Search(),
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
               child: Text(
                 'Москва, MSK',
@@ -39,10 +39,15 @@ class _TravelState extends State<Travel> {
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(children: [TravelTransport(), TravelTransport(), TravelTransport()],
+              child: Row(
+                children: const [
+                  TravelTransport(),
+                  TravelTransport(),
+                  TravelTransport()
+                ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
               child: Text(
                 'Сочи, MSK',
@@ -51,10 +56,15 @@ class _TravelState extends State<Travel> {
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(children: [TravelTransport(), TravelTransport(), TravelTransport()],
+              child: Row(
+                children: const [
+                  TravelTransport(),
+                  TravelTransport(),
+                  TravelTransport()
+                ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
               child: Text(
                 'Екатеринбург, MSK',
@@ -63,7 +73,12 @@ class _TravelState extends State<Travel> {
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(children: [TravelTransport(), TravelTransport(), TravelTransport()],
+              child: Row(
+                children: const [
+                  TravelTransport(),
+                  TravelTransport(),
+                  TravelTransport()
+                ],
               ),
             ),
           ],
@@ -92,14 +107,14 @@ class _TravelTransportState extends State<TravelTransport> {
             borderRadius: BorderRadius.circular(10),
             border: Border.all(color: Colors.white),
             color: Colors.blue),
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         width: 110,
         height: 140,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset('assets/images/bus.svg'),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
               child: SizedBox(
                   width: 80,
@@ -120,4 +135,3 @@ class _TravelTransportState extends State<TravelTransport> {
     );
   }
 }
-

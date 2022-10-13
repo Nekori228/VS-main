@@ -10,10 +10,10 @@ class Phrase extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'СПИСОК ФРАЗ',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),
@@ -21,20 +21,12 @@ class Phrase extends StatelessWidget {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
-          children: [
+          children: const [
             Search(),
-            Container(
-              child: Phrases(),
-            ),
-            Container(
-              child: Phrases(),
-            ),
-            Container(
-              child: Phrases(),
-            ),
-            Container(
-              child: Phrases(),
-            ),
+            Phrases(),
+            Phrases(),
+            Phrases(),
+            Phrases(),
           ],
         ),
       ),
@@ -64,15 +56,15 @@ class _SearchState extends State<Search> {
                 onChanged: (value) {},
                 decoration: InputDecoration(
                     prefixIcon: Padding(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
+                        children: const [
                           Icon(Icons.search),
                         ],
                       ),
                     ),
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10)))),
               ),
             ),
@@ -96,7 +88,7 @@ class _PhrasesState extends State<Phrases> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        const Padding(
             padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
             child: Text(
               'I want to call a taxi',
@@ -108,12 +100,12 @@ class _PhrasesState extends State<Phrases> {
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.white),
                 color: Colors.red),
-            margin: EdgeInsets.all(15),
+            margin: const EdgeInsets.all(15),
             width: 110,
             height: 45,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Text(
                   'TRANSPORT',
                   style: TextStyle(fontSize: 13, color: Colors.white),
@@ -126,12 +118,12 @@ class _PhrasesState extends State<Phrases> {
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.white),
                 color: Colors.red),
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             width: 110,
             height: 45,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Text(
                   'RESTAURNANT',
                   style: TextStyle(fontSize: 13, color: Colors.white),
@@ -144,15 +136,15 @@ class _PhrasesState extends State<Phrases> {
               Navigator.pushNamed(context, '/phrasecard');
             },
             child: Padding(
-              padding: EdgeInsets.fromLTRB(70, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(70, 0, 0, 0),
                 child: SvgPicture.asset('assets/images/moreBlue.svg')),
           ),
         ]),
         Padding(
-          padding: EdgeInsets.fromLTRB(0, 15, 0, 0),
+          padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
           child: Center(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.grey,
               ),
               width: 330,

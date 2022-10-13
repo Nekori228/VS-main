@@ -11,10 +11,10 @@ class Phone extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
-          iconTheme: IconThemeData(color: Colors.blue),
+          iconTheme: const IconThemeData(color: Colors.blue),
           centerTitle: true,
           backgroundColor: Colors.white,
-          title: Text(
+          title: const Text(
             'ТЕЛЕФОНЫ СЛУБЖ',
             style: TextStyle(color: Colors.black, fontSize: 14),
           ),
@@ -22,7 +22,7 @@ class Phone extends StatelessWidget {
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -36,9 +36,9 @@ class Phone extends StatelessWidget {
               ),
             ),
             Container(
-                child: Scroll()
+                child: const Scroll()
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -52,9 +52,9 @@ class Phone extends StatelessWidget {
               ),
             ),
             Container(
-              child: Scroll(),
+              child: const Scroll(),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -68,9 +68,9 @@ class Phone extends StatelessWidget {
               ),
             ),
             Container(
-              child: Scroll(),
+              child: const Scroll(),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -84,9 +84,9 @@ class Phone extends StatelessWidget {
               ),
             ),
             Container(
-              child: Scroll(),
+              child: const Scroll(),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 10),
               child: Align(
                 alignment: Alignment.centerLeft,
@@ -100,7 +100,7 @@ class Phone extends StatelessWidget {
               ),
             ),
             Container(
-              child: Number(),
+              child: const Number(),
             ),
           ]),
         ));
@@ -126,20 +126,20 @@ class Scroll extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.white),
                       color: Colors.blue),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 230,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child:
                                 SvgPicture.asset('assets/images/medicine.svg')),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 125,
                         height: 40,
                         child: Text('Единый телефон служб',
@@ -161,20 +161,20 @@ class Scroll extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.white),
                       color: Colors.blue),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 230,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child:
                                 SvgPicture.asset('assets/images/medicine.svg')),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 125,
                         height: 40,
                         child: Text('Единый телефон служб',
@@ -215,15 +215,15 @@ class _NumberState extends State<Number> {
                 child: Container(
                   child: DottedBorder(
                     borderType: BorderType.RRect,
-                    radius: Radius.circular(12),
-                    padding: EdgeInsets.all(6),
+                    radius: const Radius.circular(12),
+                    padding: const EdgeInsets.all(6),
                     color: Colors.orange,
                     dashPattern: [4, 4],
                     strokeWidth: 2,
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.fromLTRB(22, 20, 20, 20),
+                          padding: const EdgeInsets.fromLTRB(22, 20, 20, 20),
                           child: SizedBox(
                               width: 25,
                               height: 25,
@@ -232,7 +232,7 @@ class _NumberState extends State<Number> {
                       ],
                     ),
                   ),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 80,
                   height: 80,
                 ),
@@ -245,19 +245,19 @@ class _NumberState extends State<Number> {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.white),
                       color: Colors.blue),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 170,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child: SvgPicture.asset('assets/images/hotel.svg')),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 90,
                         height: 40,
                         child: Text('Отель Невский',
@@ -278,19 +278,19 @@ class _NumberState extends State<Number> {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.white),
                       color: Colors.blue),
-                  margin: EdgeInsets.all(15),
+                  margin: const EdgeInsets.all(15),
                   width: 170,
                   height: 80,
                   child: Row(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         child: SizedBox(
                             width: 40,
                             height: 40,
                             child: SvgPicture.asset('assets/images/hotel.svg')),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 90,
                         height: 40,
                         child: Text('Отель Невский',

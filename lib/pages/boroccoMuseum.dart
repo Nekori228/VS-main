@@ -16,13 +16,13 @@ class _BoroccoMuseumState extends State<BoroccoMuseum> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
         title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Text(
+              const Text(
                 'КАРТОЧКА МАРШРУТА',
                 style: TextStyle(color: Colors.black, fontSize: 14),
               ),
@@ -34,7 +34,7 @@ class _BoroccoMuseumState extends State<BoroccoMuseum> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 30),
               child: Text(
                 'Эпоха раннего Барокко',
@@ -43,7 +43,7 @@ class _BoroccoMuseumState extends State<BoroccoMuseum> {
             ),
             Center(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage('assets/photo/museum.png'),
                         fit: BoxFit.fill)),
@@ -52,18 +52,18 @@ class _BoroccoMuseumState extends State<BoroccoMuseum> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SvgPicture.asset('assets/images/time.svg'),
-                  Text(
+                  const Text(
                     '4 часа 50 минут',
                     style: TextStyle(fontSize: 16),
                   ),
                   SvgPicture.asset('assets/images/road.svg'),
-                  Text(
+                  const Text(
                     '13 объектов',
                     style: TextStyle(fontSize: 16),
                   ),
@@ -73,15 +73,15 @@ class _BoroccoMuseumState extends State<BoroccoMuseum> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [Photo(), Photo(), Photo()],
+                children: const [Photo(), Photo(), Photo()],
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(10),
               child: Center(child: SvgPicture.asset('assets/images/timelineBig.svg')),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
               child: SizedBox(
                 width: 340,
                 height: 150,
@@ -105,7 +105,7 @@ class _BoroccoMuseumState extends State<BoroccoMuseum> {
                     height: 50,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           'В ПУТЬ',
                           style: TextStyle(

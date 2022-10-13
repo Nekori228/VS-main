@@ -10,10 +10,10 @@ class TravelProcces extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'ХОТИТЕ ПОПАСТЬ В МОСКВУ',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),
@@ -22,24 +22,24 @@ class TravelProcces extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(children: [
           Container(
-            child: Info(),
+            child: const Info(),
           ),
           Container(
-            child: Info2(),
+            child: const Info2(),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(15, 0, 20, 0),
+            padding: const EdgeInsets.fromLTRB(15, 0, 20, 0),
             child: Row(children: [
               SvgPicture.asset('assets/images/timeline.svg'),
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
                   child: Text(
                     'Купить билеты',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                   child: SizedBox(
                     width: 260,
@@ -55,12 +55,12 @@ class TravelProcces extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.white),
                       color: Colors.blue),
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   width: 200,
                   height: 45,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Text(
                         'КУПИТЬ БИЛЕТЫ',
                         style: TextStyle(
@@ -71,14 +71,14 @@ class TravelProcces extends StatelessWidget {
                     ],
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(15, 20, 20, 0),
                   child: Text(
                     'Забронировать отель',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                   child: SizedBox(
                     width: 260,
@@ -94,12 +94,12 @@ class TravelProcces extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.white),
                       color: Colors.blue),
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   width: 200,
                   height: 45,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Text(
                         'ЗАБРОНИРОВАТЬ',
                         style: TextStyle(
@@ -110,14 +110,14 @@ class TravelProcces extends StatelessWidget {
                     ],
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(15, 20, 20, 0),
                   child: Text(
                     'Вызвать такси',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                   child: SizedBox(
                     width: 260,
@@ -133,12 +133,12 @@ class TravelProcces extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(color: Colors.white),
                       color: Colors.blue),
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   width: 200,
                   height: 45,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Text(
                         'ЗАКАЗ ТАКСИ',
                         style: TextStyle(
@@ -165,17 +165,17 @@ class Info extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
       Padding(
-          padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
+          padding: const EdgeInsets.fromLTRB(15, 20, 0, 20),
           child: SvgPicture.asset('assets/images/time.svg')),
-      Text(
+      const Text(
         '10-11 часов',
         style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
       ),
       Padding(
-        padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
+        padding: const EdgeInsets.fromLTRB(15, 20, 0, 20),
         child: SvgPicture.asset('assets/images/tickets.svg'),
       ),
-      Padding(
+      const Padding(
         padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
         child: Text(
           '5000-7000 p',
@@ -193,17 +193,17 @@ class Info2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
       Padding(
-          padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
+          padding: const EdgeInsets.fromLTRB(15, 20, 0, 20),
           child: SvgPicture.asset('assets/images/time.svg')),
-      Text(
+      const Text(
         '10-11 часов',
         style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
       ),
       Padding(
-        padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
+        padding: const EdgeInsets.fromLTRB(15, 20, 0, 20),
         child: SvgPicture.asset('assets/images/road.svg'),
       ),
-      Padding(
+      const Padding(
         padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
         child: Text(
           '5000-7000 p',

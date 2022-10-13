@@ -10,10 +10,10 @@ class Language extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'ВЫБЕРИТЕ СИТУАЦИЮ',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),
@@ -22,10 +22,10 @@ class Language extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Row(children: [LanguageBlock(), LanguageBlock()]),
-            Row(children: [LanguageBlock(), LanguageBlock()]),
-            Row(children: [LanguageBlock(), LanguageBlock()]),
-            Row(children: [LanguageBlock(), LanguageBlock()]),
+            Row(children: const [LanguageBlock(), LanguageBlock()]),
+            Row(children: const [LanguageBlock(), LanguageBlock()]),
+            Row(children: const [LanguageBlock(), LanguageBlock()]),
+            Row(children: const [LanguageBlock(), LanguageBlock()]),
           ],
         ),
       ),
@@ -47,14 +47,14 @@ class LanguageBlock extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
             border: Border.all(color: Colors.white),
             color: Colors.blue),
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         width: 160,
         height: 180,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset('assets/images/menu.svg'),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
               child: SizedBox(
                   width: 80,

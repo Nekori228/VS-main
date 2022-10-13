@@ -15,13 +15,13 @@ class _MuseumState extends State<Museum> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
         title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Text(
+              const Text(
                 'КАРТОЧКА МУЗЕЯ',
                 style: TextStyle(color: Colors.black, fontSize: 14),
               ),
@@ -33,7 +33,7 @@ class _MuseumState extends State<Museum> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 20, 0, 30),
               child: Text(
                 'Эрмитаж',
@@ -42,7 +42,7 @@ class _MuseumState extends State<Museum> {
             ),
             Center(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage('assets/photo/museum.png'),
                         fit: BoxFit.fill)),
@@ -53,29 +53,29 @@ class _MuseumState extends State<Museum> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [Photo(), Photo(), Photo()],
+                children: const [Photo(), Photo(), Photo()],
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 10, 0, 30),
+              padding: const EdgeInsets.fromLTRB(0, 10, 0, 30),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SvgPicture.asset('assets/images/time.svg'),
-                  Text(
+                  const Text(
                     '4-5 часов',
                     style: TextStyle(fontSize: 16),
                   ),
                   SvgPicture.asset('assets/images/tickets.svg'),
-                  Text(
+                  const Text(
                     '800 руб.',
                     style: TextStyle(fontSize: 16),
                   ),
                 ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
               child: SizedBox(
                 width: 340,
@@ -89,21 +89,21 @@ class _MuseumState extends State<Museum> {
                 ),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 40, 0, 40),
               child: Text(
                 'Слушай на пути к музею',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
               child: Text(
                 'Часть №1',
                 style: TextStyle(fontSize: 16),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
               child: Text('История основная',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
@@ -111,7 +111,7 @@ class _MuseumState extends State<Museum> {
             GestureDetector(
               onTap: () => Navigator.pushNamed(context, '/audioplayer'),
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -120,14 +120,14 @@ class _MuseumState extends State<Museum> {
                 ),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 10),
               child: Text(
                 'Часть №1',
                 style: TextStyle(fontSize: 16),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
               child: Text('История основная',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
@@ -135,7 +135,7 @@ class _MuseumState extends State<Museum> {
             GestureDetector(
               onTap: () => Navigator.pushNamed(context, '/audioplayer'),
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -157,7 +157,7 @@ class _MuseumState extends State<Museum> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'В ПУТЬ, К МУЗЕЮ',
                         style: TextStyle(
                             fontSize: 18,
@@ -182,9 +182,9 @@ class Photo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(15, 40, 5, 30),
+      padding: const EdgeInsets.fromLTRB(15, 40, 5, 30),
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/photo/museum.png'),
                 fit: BoxFit.fill)),

@@ -9,10 +9,10 @@ class Catalog extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.blue),
+        iconTheme: const IconThemeData(color: Colors.blue),
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'КАТАЛОГ МАРШРУТОВ',
           style: TextStyle(color: Colors.black, fontSize: 14),
         ),
@@ -22,25 +22,25 @@ class Catalog extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Name(),
+            const Name(),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [Borocco(), Borocco()],
+                children: const [Borocco(), Borocco()],
               ),
             ),
-            Name(),
+            const Name(),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [Borocco(), Borocco()],
+                children: const [Borocco(), Borocco()],
               ),
             ),
-            Name(),
+            const Name(),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [Borocco(), Borocco()],
+                children: const [Borocco(), Borocco()],
               ),
             ),
             Padding(
@@ -57,7 +57,7 @@ class Catalog extends StatelessWidget {
                     height: 50,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           'СЛУЧАЙНЫЙ МАРШРУТ',
                           style: TextStyle(
@@ -85,7 +85,7 @@ class Catalog extends StatelessWidget {
                     height: 50,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           'ПО ВАШЕМУ МЕСТУ',
                           style: TextStyle(
@@ -111,7 +111,7 @@ class Name extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.fromLTRB(15, 20, 0, 20),
       child: Text(
         'Архитектура',
@@ -127,7 +127,7 @@ class Borocco extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(15),
+      padding: const EdgeInsets.all(15),
       child: Column(
         children: [
           Container(
@@ -147,7 +147,7 @@ class Borocco extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('assets/photo/museum.png'),
                               fit: BoxFit.fill)),
@@ -156,7 +156,7 @@ class Borocco extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 5),
                   child: Text(
                     'Эпоха раннего Барроко',
@@ -166,7 +166,7 @@ class Borocco extends StatelessWidget {
                         fontWeight: FontWeight.w500),
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(20, 5, 0, 15),
                   child: Text(
                     'Этот маршрут прошли 1209 человек',
