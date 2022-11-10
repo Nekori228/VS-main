@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -12,190 +11,109 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
-        child: SafeArea(
-          child: Column(
-            children: [
-              Align(
-                alignment: Alignment.topCenter,
-                child: GestureDetector(
-                  onTap: () => Navigator.pushNamed(context, '/phone'),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.white),
-                      color: Colors.blue
-                    ),
-                    margin: const EdgeInsets.all(15),
-                    width: 340,
-                    height: 80,
-                    child: Row(
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(15),
-                          child: SizedBox(
-                              width: 40,
-                              height: 40,
-                              child: SvgPicture.asset('assets/images/man.svg')),
-                        ),
-                        const Text('Попали в трудную ситуацию? \nТелефоны служб',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 12)),
-                        const Padding(padding: EdgeInsets.all(10)),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                          child: SizedBox(
-                              width: 30,
-                              height: 30,
-                              child: SvgPicture.asset('assets/images/more.svg')),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, '/catalog'),
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.white),
-                      color: Colors.blue
-                  ),
-                  margin: const EdgeInsets.all(15),
-                  width: 340,
-                  height: 80,
-                  child: Row(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(15),
-                        child: SizedBox(
-                            width: 40,
-                            height: 40,
-                            child: SvgPicture.asset('assets/images/map.svg')),
-                      ),
-                      const Text('Тематически провести день? \nМаршруты прогулок',
-                          style: TextStyle(color: Colors.white, fontSize: 12)),
-                      const Padding(padding: EdgeInsets.all(10)),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(25, 0, 0, 0),
-                        child: SizedBox(
-                            width: 30,
-                            height: 30,
-                            child: SvgPicture.asset('assets/images/more.svg')),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, '/language'),
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.white),
-                      color: Colors.blue
-                  ),
-                  margin: const EdgeInsets.all(15),
-                  width: 340,
-                  height: 80,
-                  child: Row(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(15),
-                        child: SizedBox(
-                            width: 40,
-                            height: 40,
-                            child: SvgPicture.asset('assets/images/woman.svg')),
-                      ),
-                      const Text('Легко общаться с жителями? \nВыучите язык',
-                          style: TextStyle(color: Colors.white, fontSize: 12)),
-                      const Padding(padding: EdgeInsets.all(10)),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(25 , 0, 0, 0),
-                        child: SizedBox(
-                            width: 30,
-                            height: 30,
-                            child: SvgPicture.asset('assets/images/more.svg')),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, '/travel'),
-                child: Container(decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.white),
-                    color: Colors.blue
-                ),
-                  margin: const EdgeInsets.all(15),
-                  width: 340,
-                  height: 80,
-                  child: Row(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(15),
-                        child: SizedBox(
-                            width: 40,
-                            height: 40,
-                            child:
-                                SvgPicture.asset('assets/images/travel.svg')),
-                      ),
-                      const Text(
-                          'Хотите больше увидеть в России? \nПоездка по городам',
-                          style: TextStyle(color: Colors.white, fontSize: 12)),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                        child: SizedBox(
-                            width: 30,
-                            height: 30,
-                            child: SvgPicture.asset('assets/images/more.svg')),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () => Navigator.pushNamed(context, '/museum'),
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.white),
-                      color: Colors.blue
-                  ),
-                  margin: const EdgeInsets.all(15),
-                  width: 340,
-                  height: 80,
-                  child: Row(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(15),
-                        child: SizedBox(
-                            width: 40,
-                            height: 40,
-                            child: SvgPicture.asset('assets/images/photo.svg')),
-                      ),
-                      const Text('Нравится духовно развиваться? \nМузеи города',
-                          style: TextStyle(color: Colors.white, fontSize: 12)),
-                      const Padding(padding: EdgeInsets.all(10)),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                        child: SizedBox(
-                            width: 30,
-                            height: 30,
-                            child: SvgPicture.asset('assets/images/more.svg')),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            ],
+      body: Column(
+        children: [
+          aa(),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+            child: Text("Let’s get closer", style: TextStyle(fontSize: 25)),
           ),
+          ff(),
+          ffw()
+        ],
+      )
+    );
+  }
+}
+
+class aa extends StatelessWidget {
+  const aa({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 400,
+      height: 460,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/photo/Tickets.png"),
+          fit: BoxFit.cover,
         ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 70, 0, 0),
+        child: Text('WELCOME TO FREEBIE',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              color: Colors.white,
+              fontSize: 35,
+              fontWeight: FontWeight.bold,),),
       ),
     );
   }
 }
+
+
+class ff extends StatelessWidget {
+  const ff({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column (
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+      GestureDetector(
+        onTap: () => Navigator.pushNamed(context, '/sing'),
+        child: Container(
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5), color: Colors.pink
+          ),
+        width: 150,
+        height: 40,
+          child: Center(
+              child: Text('Sing up',
+                  style: TextStyle(color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold)
+              )
+          ),
+    ),
+      ),
+  ]
+    );
+  }
+}
+
+class ffw extends StatelessWidget {
+  const ffw({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column (
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          GestureDetector(
+            onTap: () => Navigator.pushNamed(context, '/log'),
+            child: Padding(
+              padding: const EdgeInsets.all(10),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5), color: Colors.pink
+                ),
+                  width: 150,
+                  height: 40,
+                child: Center(
+                    child: Text('login',
+                        style: TextStyle(color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold)
+                    )
+                ),
+              ),
+            ),
+          )
+        ]
+    );
+  }
+}
+

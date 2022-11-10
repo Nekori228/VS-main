@@ -1,40 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/pages/home.dart';
-import 'package:untitled/pages/phone.dart';
-import 'package:untitled/pages/routeCatalog.dart';
-import 'package:untitled/pages/language.dart';
-import 'package:untitled/pages/travel.dart';
-import 'package:untitled/pages/museum.dart';
-import 'package:untitled/pages/phoneServices.dart';
-import 'package:untitled/pages/edit.dart';
-import 'package:untitled/pages/phrase.dart';
-import 'package:untitled/pages/phraseCard.dart';
-import 'package:untitled/pages/travelProcess.dart';
-import 'package:untitled/pages/audioPlayer.dart';
-import 'package:untitled/pages/boroccoMuseum.dart';
-import 'package:untitled/pages/boroccoMuseumBig.dart';
+import 'package:untitled/pages/login.dart';
+import 'package:untitled/pages/sing_up.dart';
+import 'package:untitled/pages/home_state.dart';
 import 'package:untitled/pages/map.dart';
-import 'package:untitled/pages/bouttonOne.dart';
-
+import 'package:untitled/pages/ticket.dart';
+import 'package:untitled/pages/search.dart';
+import 'package:untitled/pages/details.dart';
+import 'package:untitled/pages/buy.dart';
 
 void main() => runApp(MaterialApp(
 initialRoute: '/',
    routes: {
         '/': (context) => const Home(),
-        '/phone': (context) => const Phone(),
-        '/catalog': (context) => const Catalog(),
-        '/language': (context) => const Language(),
-        '/travel': (context) => const Travel(),
-        '/museum': (context) => const Museum(),
-        '/services': (context) => const Services(),
-        '/edit': (context) => const Edit(),
-        '/phrase': (context) => const Phrase(),
-        '/phrasecard': (context) => const PhraseCard(),
-        '/travelprocess': (context) => const TravelProcces(),
-        '/audioplayer': (context) => const AudioPlayer(),
-        '/boroccomuseum': (context) => const BoroccoMuseum(),
-        '/boroccomuseumbig': (context) => const BoroccoMuseumBig(),
-        '/map': (context) => const Map(),
-        '/boutton': (context) => const Boutton(),
+        '/log': (context) => const login(),
+        '/sing': (context) => const sin(),
+        '/hmst': (context) => const home_state(),
+        '/map': (context) => const maps(),
+        '/tick': (context) => const tic(),
+        '/ser': (context) => const search(),
+        '/detail': (context) => const detl(),
+        '/buys': (context) => const buy(),
    },
     ));

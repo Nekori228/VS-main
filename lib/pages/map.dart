@@ -1,33 +1,94 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong2/latlong.dart' as latLng;
 
-class Map extends StatelessWidget {
-  const Map({Key? key}) : super(key: key);
+class maps extends StatelessWidget {
+  const maps({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        iconTheme: const IconThemeData(color: Colors.blue),
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        title: const Text(
-          'ВЫБЕРИТЕ МАРШРУТ',
-          style: TextStyle(color: Colors.black, fontSize: 14),
-        ),
-      ),
-      body: Center(
-        child: SizedBox(
-          width: 300,
-          height: 300,
-          child: Text(
-            'Извините, но карты нету. Для использования Google maps нужен платный API',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+      body:
+      Column(
+        children: [
+          Container(
+            width: 360,
+            height: 80,
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 15, 0, 0),
+              child: Row(
+                children: [
+                  SvgPicture.asset('assets/images/mask6.svg'),
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Container(
+                      width: 250,
+                      height: 40,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15), color: Colors.white54
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Event name, artisrt, place'
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
-        ),
+          SizedBox(
+              width: 400,
+              height: 475,
+                  child:
+              sur()
+          ),
+          GestureDetector(
+            onTap: () => Navigator.pushNamed(context, '/ser'),
+            child: Container(
+              width: 400,
+              height: 30,
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+              child:
+              SvgPicture.asset('assets/images/mask4.svg'),
+            ),
+          )
+        ],
+      )
+    );
+  }
+}
+
+class sur extends StatelessWidget {
+  const sur({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return FlutterMap(
+      options: MapOptions(
+        center: latLng.LatLng(61.1500, 73.2600),
+        zoom: 9.2,
       ),
+      nonRotatedChildren: [
+        AttributionWidget.defaultWidget(
+          source: 'Nekori',
+          onSourceTapped: null,
+        ),
+      ],
+      children: [
+        TileLayer(
+          urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+          userAgentPackageName: 'com.example.app',
+        ),
+      ],
     );
   }
 }
